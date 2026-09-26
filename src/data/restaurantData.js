@@ -6,8 +6,8 @@ export const restaurantInfo = {
   phones: ["+91 97589 18395", "+91 75181 39250"],
   whatsappNumber: "919758918395",
   whatsappCommunityUrl: "https://chat.whatsapp.com/invite/ZilaChaapCommunity",
-  timing: "10:00 AM - 11:00 PM (Daily Fresh Live Batches)",
-  location: "Roadside Food Court Stall, Main Market Road",
+  timing: "6:00 PM - 10:30 PM (Daily Fresh Live Batches)",
+  location: "Ek Murti, Greater Noida West",
   swiggyUrl: "https://www.swiggy.com",
   zomatoUrl: "https://www.zomato.com",
   menuPdfUrl: "/menu.pdf"

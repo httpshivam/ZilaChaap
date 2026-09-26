@@ -12,10 +12,10 @@ export function Hero({ onOpenPdf }) {
         {/* Top Info Bar matching street food court */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 sm:gap-4 pb-4 border-b border-stone-300 text-stone-700 font-bebas text-lg md:text-xl">
           <div>
-            <div className="text-[#FF5400] text-2xl md:text-3xl leading-none font-bold">10:00 - 23:00</div>
+            <div className="text-[#FF5400] text-2xl md:text-3xl leading-none font-bold">6:00 PM - 10:30 PM</div>
             <div className="tracking-wide text-xs sm:text-sm text-stone-600 font-sans mt-0.5 font-medium flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#E61E54]" />
-              <span>Roadside Food Court Stall • Fresh Live Charcoal Tandoor</span>
+              <span>Ek Murti, Greater Noida West • Fresh Live Charcoal Tandoor</span>
             </div>
           </div>
 

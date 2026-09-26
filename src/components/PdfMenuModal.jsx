@@ -27,18 +27,19 @@ export function PdfMenuModal({ isOpen, onClose }) {
         {/* Modal Body: Preview */}
         <div className="p-6 overflow-y-auto space-y-6 flex-1 bg-stone-50">
           {/* Download callout bar */}
+          {/* Download callout bar */}
           <div className="p-4 bg-[#FFEBF0] border-2 border-[#E61E54] rounded-lg flex flex-col sm:flex-row items-center justify-between gap-3">
             <div>
               <div className="font-display text-xl text-[#E61E54]">
                 READY TO DOWNLOAD OFFICIAL MENU PDF
               </div>
               <p className="text-xs text-stone-700">
-                Official high-resolution print menu document (Size: ~51 MB).
+                Official high-resolution print rate card & menu document (Size: 445 KB).
               </p>
             </div>
             <a
               href="/menu.pdf"
-              download="Zila_Chaap_Full_Menu.pdf"
+              download="Zila_Chaap_Menu.pdf"
               className="btn-primary py-2 px-4 text-sm flex items-center gap-1.5 shrink-0"
             >
               <Download className="w-4 h-4" />
@@ -46,48 +47,50 @@ export function PdfMenuModal({ isOpen, onClose }) {
             </a>
           </div>
 
-          {/* Banner visual preview */}
+          {/* Official Rate Card Visual Preview */}
           <div className="border-2 border-[#181512] rounded-lg overflow-hidden bg-white shadow-sm">
             <div className="bg-[#181512] text-white px-3 py-1.5 text-xs font-bebas tracking-wider flex justify-between items-center">
-              <span>MENU BANNER PREVIEW</span>
+              <span>OFFICIAL RATE CARD PREVIEW / मेन्यू व रेट लिस्ट</span>
               <span className="text-[#FF5400] font-hindi">एक बार खाओगे, बार-बार आओगे!</span>
             </div>
-            <img
-              src="/banner-preview.png"
-              alt="Menu Preview"
-              className="w-full h-auto object-contain"
-            />
+            <div className="p-2 sm:p-4 bg-[#FAF6EF] flex justify-center">
+              <img
+                src="/menu-preview.png"
+                alt="Zila Chaap Official Rate Card Menu"
+                className="w-full max-w-md h-auto object-contain rounded border-2 border-[#181512] shadow-pop"
+              />
+            </div>
           </div>
 
-          {/* Menu Highlights List */}
+          {/* Menu Highlights List matching PDF */}
           <div className="bg-white p-5 rounded-lg border-2 border-stone-300">
             <h4 className="font-display text-xl text-[#181512] mb-3">
-              MENU SPECIALITIES INCLUDED:
+              EXACT MENU ITEMS & RATES INCLUDED:
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-stone-700">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Special Masala Soya Chaap (Half / Full)</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>11 Tandoori Soya Chaap Specialities (Half ₹100, Full ₹180-200)</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Afghani Malai Chaap (Rich Cashew Cream)</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>Malai & Afghani Chaap (Rich Cashew Cream)</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Masala Malai Combo Chaap</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>Pahadi, Achari, Hariyali & Lemon Chaap</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Juicy Veg & Paneer Steamed Momos</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>Steaming Veg Momos (Half ₹40 / Full ₹60)</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Crunchy Kurkure Momos with Peri Peri</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>Fresh Paneer Momos (Half ₹50 / Full ₹70)</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Tandoori Gravy Chaap & Rumali Roti Combos</span>
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
+                <span>Hot Rumali Roti (₹10/pc) & Tandoori Roti (₹14/pc)</span>
               </div>
             </div>
           </div>
